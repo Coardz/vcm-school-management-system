@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+.nav-container {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    background-color: #27ae60;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-image {
+    width: 100px;
+    height: auto;
+}
+
+.logo-name {
+    color: white;
+    font-family: Roboto;
+    font-weight: normal;
+}
+
+.nav-links {
+    /* border: 1px solid red; */
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links div a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-family: Roboto;
+    font-size: 25px;
+}
