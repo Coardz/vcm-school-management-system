@@ -4,13 +4,22 @@
     margin: 0px;
 }
 
+body {
+    background-color: #f2f3f1;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
 .nav-container {
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
-    background-color: #27ae60;
+    background-color: #be3d2d;
+    flex-wrap: wrap;
 }
 
 .logo {
@@ -20,7 +29,7 @@
 }
 
 .logo-image {
-    width: 100px;
+    width: 60px;
     height: auto;
 }
 
@@ -41,5 +50,78 @@
     list-style: none;
     color: white;
     font-family: Roboto;
+    font-size: 18px;
+}
+
+.nav-links div a:hover {
+    border-bottom: solid 1px white;
+}
+
+
+.school-section {
+    position: relative;
+    background: linear-gradient(rgba(187, 198 ,200, 0.6), rgba(187, 198, 200, 0.5)),
+    url("/Images/pexels-naomi-shi-374023-1001914.jpg");
+    background-size: cover; /* Ensures the image covers the section without stretching */
+    background-repeat: no-repeat; /* Prevents tiling of the image */
+    background-position: center; /* Centers the image */
+    height: 100vh; /* Full-screen height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.schoolheader,
+.school-section {
+    color: #1b1919;
+    font-family: "DM Serif Text";
+
+}
+
+.school-header {
+    font-size: 50px;
+    /* text-shadow: 2px 2px black; */
+}
+
+.school-description {
     font-size: 25px;
 }
+
+/* @media (max-width: 768px) {
+    .nav-container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-links {
+        flex-direction: row;
+        gap: 10px;
+        align-content: center;
+    }
+
+    .logo {
+        flex-direction: column;
+        align-items: center;
+        flex-shrink: 0;
+        flex-grow: 1;
+    }
+
+    .logo-image {
+        width: 60px;
+    }
+
+    .logo-name {
+        font-size: 30px;
+    }
+
+    .nav-links div a {
+        font-size: 18px;
+    }
+
+    .nav-links div a:hover {
+        border-bottom: solid 1px white;
+    }
+} */
